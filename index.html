@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="loadComponents.js"></script>
+    <link rel="stylesheet" href="./Components/Header/header.css" />
+    <link rel="stylesheet" href="./Components/Footer/footer.css" />
+    <link rel="icon" href="./Images/favicon-32x32.png" />
+    <title>WCS</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="video-background">
+          <video src="/videos/VIDEO 1.mp4" autoplay loop muted></video>
+        </div>
+        <!-- HEADER -->
+
+        <div id="header"></div>
+
+        <!-- HOME SECTION -->
+        <section class="home-section">
+          <div class="floating-window" id="floatingWindow">
+            <div class="window-close-icon" onclick="closeFloatingWindow()">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="window-content">
+              <h2>Expert Consultation</h2>
+              <div class="divider-horizontal"></div>
+              <p>
+                Experience you can trust, service you can count on. Fill out a
+                free consultation form and a representative will get back to you
+                within 24 hours.
+              </p>
+              <form>
+                <div class="input-container">
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="Phone" />
+                </div>
+                <button type="submit">Claim my free consultation</button>
+              </form>
+            </div>
+          </div>
+          <div class="right-content">
+            <h1 id="animated-text">Collaboration. Execution. Delivery.</h1>
+          </div>
+        </section>
+      </main>
+
+      <!-- BANNER -->
+      <div class="banner-section">
+        <div class="banner">
+          <div
+            class="banner-background"
+            style="background-image: url('./Images/AboutImage.jpeg')"
+          ></div>
+          <div class="banner-content">
+            <h3>Custom Homes / Residential</h3>
+            <p>
+              Full Project Design, Interior Design Services, Renovation and more
+            </p>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="banner">
+          <div
+            class="banner-background"
+            style="
+              background-image: url('./Images/wcs-karma-and-luck-galleria-store-buildout-scaled.jpg');
+            "
+          ></div>
+          <div class="banner-content">
+            <h3>Commercial / Industrial</h3>
+            <p>Design-Build Construction, Interior Design</p>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="banner">
+          <div
+            class="banner-background"
+            style="
+              background-image: url('./Images/wcs-commercial-karma-and-luck3-scaled.jpg');
+            "
+          ></div>
+          <div class="banner-content">
+            <h3>Follow us on Instagram</h3>
+            <p>Stay tuned with all the latest updates</p>
+            <button>Follow Us</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISION -->
+      <div class="continuous-background">
+        <div class="translucent-bg"></div>
+        <section class="divider-section">
+          <div class="divider-container">
+            <div class="header">
+              <h1>Williams Construction Services</h1>
+              <h4>Bringing your vision to life</h4>
+            </div>
+            <div class="divider-horizontal"></div>
+            <h2>How it works</h2>
+          </div>
+        </section>
+        <section class="construction-section">
+          <!--Row 1-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img
+                src="./Images/Free consultation.png"
+                alt="Construction Image"
+              />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Free Consultation</h3>
+                <p>
+                  While building from the ground up and engaging in large
+                  renovations are both major endeavors, the benefits are
+                  undeniably remarkable. Want to build equity over time? Looking
+                  to maximize your tax benefits? Call us now to start the
+                  process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Row 2-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img
+                src="./Images/Full Project Design.png"
+                alt="Construction Image"
+              />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Full Project Design</h3>
+                <p>
+                  Through collaboration and teamwork, our designer and builders
+                  work seamlessly together to provide the fluid delivery of your
+                  project from inception to completion. One entity, one
+                  contract, one unified flow of work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Row 3-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img
+                src="./Images/Preconstruction Services.png"
+                alt="Construction Image"
+              />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Preconstruction</h3>
+                <p>
+                  Executed by the project manager, the preconstruction process
+                  insures the perfect balance between the architectural and
+                  design goals of the project as well as the project owners’
+                  budgetary goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Row 4-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img src="./Images/Execution.png" alt="Construction Image" />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Execution</h3>
+                <p>
+                  Quality construction management starts with an understanding
+                  of the factors that can impact both safety and quality. We
+                  commit to providing quality services by hiring the most
+                  qualified leaders.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Row 5-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img src="./Images/Construction.png" alt="Construction Image" />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Construction</h3>
+                <p>
+                  Whether you want to build a custom home or a new commercial
+                  property from the ground up, or your property is simply in
+                  need of a complete make-over, projects done right are the most
+                  effective way to increase the value of your property.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Row 6-->
+          <div class="construction-row">
+            <div class="construction-column">
+              <img src="./Images/Delivery.png" alt="Construction Image" />
+            </div>
+            <div class="construction-column">
+              <div class="construction-content">
+                <i class="construction-icon fa-solid fa-icon-name"></i>
+                <h3>Delivery</h3>
+                <p>
+                  Our design-build concept provides the ability to deliver on a
+                  tight schedule, as projects can be split up and delivered in a
+                  package approach, where individual components are designed and
+                  built as needed to achieve the final completion date.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more rows following the same structure -->
+        </section>
+      </div>
+
+      <!-- CONTACT US -->
+      <section class="video-section">
+        <div class="contact-form">
+          <iframe
+            src="./Contact form/ContactFrom_v1/contact_form.html"
+            width="100%"
+            height="850px"
+            frameborder="0"
+            scrolling="no"
+            margin="50px"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <div id="footer"></div>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+      document.cookie = "_ga=yourGoogleAnalyticsValue; SameSite=None; Secure";
+      document.cookie = "_gid=yourGoogleAnalyticsValue; SameSite=None; Secure";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  height: 110vh;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px;
+}
+
+.intro h1 {
+  font-size: 6vw;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px goldenrod;
+}
+
+.intro p {
+  font-size: 2vw;
+  text-shadow: 1px 1px 1px goldenrod;
+}
+
+.safety-container {
+  margin: 10vh 10px;
+  width: 40%;
+  height: 100%;
+}
+
+.container {
+  
+  margin: 5px;
+  width: 100%;
+}
+
+.container label {
+  padding: 10px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+}
+
+.container label i {
+  float: right;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.container label i.icon-toggle {
+  float: right;
+  margin-right: 5px;
+  transition: .3s ease-in-out, transform 0.3s;
+}
+
+.container span:hover {
+  color: goldenrod;
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.slide li {
+  height: 50px;
+  border: 1px black solid;
+  padding: 10px;
+  text-decoration: none;
+  background: grey;
+
+}
+
+.slide li:hover {
+  background: rgba(218, 165, 32, 0.673);
+}
+
+.container input[type="checkbox"] {
+  display: none;
+}
+
+.container input[type="checkbox"]:checked + .slide {
+  max-height: 500px; /* Adjust this value based on your content */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container input[type="checkbox"]:checked + .slide li {
+  display: block;
+}
